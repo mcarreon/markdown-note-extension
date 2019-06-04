@@ -1,0 +1,101 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+$sidebar-color: #EBF1F5;
+
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #D8E1E8;
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . .";
+}
+
+.sidebar-container {
+
+  .sidebar {
+    margin: 25px 60px;
+    padding: 25px 5px;
+    min-height: 25vh;
+    max-height: 80vh;
+    text-align: left;
+    background-color: $sidebar-color;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
+    position: sticky;
+    top: 25px;
+  
+    .ref-btn {
+    }
+  }
+}
+
+
+
+.ref-sidebar {
+  background-color: $sidebar-color;
+  height: 75vh;
+  margin: 25px 60px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
+  position: sticky;
+  top: 25px;
+}
+
+.note-area {
+
+  .note-textarea {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #EBF1F5;
+    margin-top: 10px;
+  }
+
+  .note-titlearea {
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #8A9BA8;
+    color: white;
+    text-align: center;
+    padding: 4px 0px;
+    font-weight: bold;
+  }
+
+  .note {
+    background-color: #EBF1F5;
+    margin: 25px 0px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
+
+    div.note-title {
+      padding: 15px;
+      background-color: #5C7080;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    div.note-content {
+      padding: 0px 25px 10px;
+      text-align: left;
+    }
+  }
+}
