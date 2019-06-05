@@ -37,7 +37,7 @@ export default class Note extends Component {
 
 
     return (
-      <div className="note">
+      <div className="note" id={`note-${this.props.index}`}>
         <div className="note-title">
           <Button icon="edit" intent="success" onClick={this.toggleEdit}/>
           {noteTitle}

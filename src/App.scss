@@ -4,6 +4,13 @@
 
 $sidebar-color: #EBF1F5;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.minimized {
+  display: none;
+}
 
 .App {
   text-align: center;
@@ -20,8 +27,7 @@ $sidebar-color: #EBF1F5;
 
   .sidebar {
     margin: 25px 60px;
-    padding: 25px 5px;
-    min-height: 25vh;
+    padding-bottom: 5px;
     max-height: 80vh;
     text-align: left;
     background-color: $sidebar-color;
@@ -29,22 +35,96 @@ $sidebar-color: #EBF1F5;
     box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
     position: sticky;
     top: 25px;
-  
-    .ref-btn {
+
+    .sidebar-title {
+      .sidebar-min {
+        color: white;
+        &:hover, &:active, &:focus {
+          background: none;
+          outline: 0;
+        }
+      }
     }
+
+    .sidebar-content {
+      overflow-y: auto;
+      max-height: 65vh;
+      overflow-x: hidden;
+
+      .table-of-contents {
+        display: flex;
+        flex-direction: column;
+  
+        a {
+          margin: 0 5px 1.5px;
+        }
+      }
+
+      
+    }
+
+    & > :nth-child(3) {
+      padding: 0 5px;
+      margin-top: 5px;
+    }
+    
   }
 }
 
+.sidebar-title, .ref-title {
+  padding: 10px;
+  background-color: #5C7080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
+  h2 {
+    padding: 3px 0 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 450;
+    
+  }
+  
+}
+
+.sidebar-content, .ref-content {
+  padding: 10px 5px;
+
+  h3 {
+    margin: 0 0 10px;
+  }
+}
 
 .ref-sidebar {
-  background-color: $sidebar-color;
-  height: 75vh;
-  margin: 25px 60px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
-  position: sticky;
-  top: 25px;
+  
+  .ref {
+    background-color: $sidebar-color;
+    max-height: 75vh;
+    margin: 25px 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 2px 5px rgba(0,0,0,.15);
+    position: sticky;
+    top: 25px;
+  
+    .ref-title {
+      
+      .sidebar-min {
+        color: white;
+        &:hover, &:active, &:focus {
+          color: white;
+          background: none;
+          outline: 0;
+        }
+      }
+    }
+  
+    .ref-content {
+      
+    }
+  }
 }
 
 .note-area {
