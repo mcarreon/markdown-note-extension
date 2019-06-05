@@ -9,7 +9,7 @@ html {
 }
 
 .minimized {
-  display: none;
+  display: none!important;
 }
 
 .App {
@@ -56,8 +56,10 @@ html {
         flex-direction: column;
   
         a {
-          margin: 0 5px 1.5px;
+          margin: 0 10px 1.5px;
         }
+
+        
       }
 
       
@@ -93,8 +95,9 @@ html {
 .sidebar-content, .ref-content {
   padding: 10px 5px;
 
-  h3 {
-    margin: 0 0 10px;
+
+  .table-of-contents > h3, & > h3 {
+    margin: 0 0 10px 5px;
   }
 }
 
@@ -122,6 +125,74 @@ html {
     }
   
     .ref-content {
+      overflow-y: auto;
+      max-height: 75vh;
+      overflow-x: hidden;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      
+      & > :nth-child(3) {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+
+      button {
+        margin: 0 10px 1.5px;
+        align-items: normal;
+        background-color: rgba(0,0,0,0);
+        border-color: #106ba3;
+        border-style: none;
+        box-sizing: content-box;
+        color: #106ba3;
+        cursor: pointer;
+        display: inline;
+        font-size: 14px;
+        padding: 2px 0;
+        perspective-origin: 0 0;
+        text-align: start;
+        transform-origin: 0 0;
+        width: auto;
+        -moz-appearance: none;
+        -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
+        -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      @supports (-moz-appearance:none) { /* Mozilla-only */
+        button::-moz-focus-inner { /* reset any predefined properties */ 
+          border: none;
+          padding: 0;
+        }
+        button:focus { /* add outline to focus pseudo-class */
+          outline-style: dotted;
+          outline-width: 1px;
+        }
+      }
+
+      .table-of-contents {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+
+        a {
+          margin: 0 5px 1.5px;
+        }
+
+        code {
+          white-space: pre-line;
+        }
+
+        
+      }
+
       
     }
   }

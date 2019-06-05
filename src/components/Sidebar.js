@@ -34,7 +34,7 @@ export default class Sidebar extends Component {
               <h3>Jump to Note</h3>
               {this.props.notes.map((note, i) => {
   
-                return <a href={`#note-${i}`}>{note.title}</a>
+                return <a href={`#note-${i}`} key={`note-link-${i}`}>{note.title}</a>
               })}
             </div>
             

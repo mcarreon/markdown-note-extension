@@ -9,7 +9,7 @@ class App extends Component {
 
   state = {
     notes: JSON.parse(window.localStorage.getItem('notes')),
-    showRef: false
+    showRef: true
   }
 
   updateNote = (content, i) => {

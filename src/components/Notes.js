@@ -11,7 +11,7 @@ export default class Notes extends Component {
       <div className="note-area">
         { notes.map((note, i) => {
 
-          return <Note note={note} updateNote={this.props.updateNote} updateNoteTitle={this.props.updateNoteTitle} deleteNote={this.props.deleteNote} index={i}/>;
+          return <Note note={note} updateNote={this.props.updateNote} updateNoteTitle={this.props.updateNoteTitle} deleteNote={this.props.deleteNote} index={i} key={`note-${i}`}/>;
         })}
       </div>
     )
