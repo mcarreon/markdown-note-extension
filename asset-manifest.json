@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/markdown-note-extension/static/css/main.e15bfc3a.chunk.css",
+    "main.css": "/markdown-note-extension/static/css/main.6f735a15.chunk.css",
     "main.js": "/markdown-note-extension/static/js/main.chunk.js",
     "main.js.map": "/markdown-note-extension/static/js/main.chunk.js.map",
     "runtime~main.js": "/markdown-note-extension/static/js/app.js",
@@ -9,10 +9,10 @@
     "static/js/2.chunk.js": "/markdown-note-extension/static/js/2.chunk.js",
     "static/js/2.chunk.js.map": "/markdown-note-extension/static/js/2.chunk.js.map",
     "index.html": "/markdown-note-extension/index.html",
-    "precache-manifest.c47ad1aee797febc6fb4ee7467f081be.js": "/markdown-note-extension/precache-manifest.c47ad1aee797febc6fb4ee7467f081be.js",
+    "precache-manifest.b67d6bd5a9c4c42d9224a668e230682f.js": "/markdown-note-extension/precache-manifest.b67d6bd5a9c4c42d9224a668e230682f.js",
     "service-worker.js": "/markdown-note-extension/service-worker.js",
     "static/css/2.252aea91.chunk.css.map": "/markdown-note-extension/static/css/2.252aea91.chunk.css.map",
-    "static/css/main.e15bfc3a.chunk.css.map": "/markdown-note-extension/static/css/main.e15bfc3a.chunk.css.map",
+    "static/css/main.6f735a15.chunk.css.map": "/markdown-note-extension/static/css/main.6f735a15.chunk.css.map",
     "static/media/App.scss": "/markdown-note-extension/static/media/icons-20.90247cfd.ttf"
   }
 }
