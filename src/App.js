@@ -21,7 +21,7 @@ class App extends Component {
 
   updateNoteTitle = ( title, i) => {
     let notesCpy = [...this.state.notes];
-    console.log(title);
+    //console.log(title);
     notesCpy[i] = { title: title, content: notesCpy[i].content };
     this.setState({notes: notesCpy});
     window.localStorage.setItem('notes', JSON.stringify(notesCpy));
