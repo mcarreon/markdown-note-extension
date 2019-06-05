@@ -49,6 +49,8 @@ export default class RefSidebar extends Component {
 
       let style = {
         paddingLeft: '5px',
+        overflowY: 'auto',
+        maxHeight: '59vh'
       }
 
       content = <div style={style}><ReactMarkdown source={example} /></div>

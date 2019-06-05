@@ -254,6 +254,9 @@ blockquote {
     div.note-content {
       padding: 0px 25px 10px;
       text-align: left;
+      p {
+        margin-top: 14px;
+      }
     }
   }
 }
