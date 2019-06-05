@@ -67,7 +67,7 @@ export default class RefSidebar extends Component {
               {content}
             </div>
             <div>
-              <p>References are adapted from Adam Pritchard's <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code" target="__blank">Markdown Cheatsheet</a>.</p>
+              <p>Reference adapted from Adam Pritchard's <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="__blank">Markdown Cheatsheet</a>.</p>
             </div>
           </div>
         </div>
