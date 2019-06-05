@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/markdown-note-extension/static/css/2.252aea91.chunk.css"
   },
   {
-    "revision": "39937d2a55475c22fb1a",
+    "revision": "dba6ca74f8e49e70e08d",
     "url": "/markdown-note-extension/static/css/main.e15bfc3a.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/markdown-note-extension/static/js/app.js"
   },
   {
-    "revision": "39937d2a55475c22fb1a",
+    "revision": "dba6ca74f8e49e70e08d",
     "url": "/markdown-note-extension/static/js/main.chunk.js"
   },
   {
