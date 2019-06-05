@@ -2,7 +2,7 @@
   "name": "markdown-note-extension",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mcarreon.github.io/markdown-note-extension",
+  "homepage": "http://marlocarreon.com/markdown-note-extension",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
